@@ -9,8 +9,8 @@ class Sources extends Model
 {
     use HasFactory;
 
-    public function articles()
+    public function article()
     {
-        return $this->belongsToMany(Articles::class);
+        return $this->belongsToMany(Article::class);
     }
 }
