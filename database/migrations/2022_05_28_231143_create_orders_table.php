@@ -15,6 +15,9 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->float('price');
+            $table->boolean('paid');
+            // A list of products ids and quantaties
             $table->timestamps();
         });
     }
