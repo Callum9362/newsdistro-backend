@@ -13,4 +13,9 @@ class Article extends Model
     {
         return $this->belongsTo(Source::class);
     }
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class);
+    }
 }

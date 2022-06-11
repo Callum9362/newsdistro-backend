@@ -17,7 +17,6 @@ class OrderFactory extends Factory
         return [
             'price' => $this->faker->numberBetween(0, 1000),
             'paid' => true,
-            'products' => "", // TODO an array of products ids and quantaties? How to do this??
         ];
     }
 }

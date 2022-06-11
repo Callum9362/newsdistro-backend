@@ -11,6 +11,11 @@ class Product extends Model
 
     public function article()
     {
-        return $this->belongsToMany(Article::class);
+        return $this->hasOneThrough(Article::class, Order::class);
+    }
+
+    public function order()
+    {
+        return $this->belongsToMany(Order::class);
     }
 }

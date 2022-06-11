@@ -17,7 +17,6 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->float('price');
             $table->boolean('paid');
-            // A list of products ids and quantaties
             $table->timestamps();
         });
     }

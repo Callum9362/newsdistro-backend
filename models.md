@@ -32,8 +32,8 @@
 
 ## Relationships
 
-Sources O--+ Articles
+Sources 1..* Article
 
-Products 0--0 Orders
+Order 1..1 Article
 
-Orders +--+ Article
+Order *..* Product
