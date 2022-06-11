@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class UserFactory extends Factory
+class SourceFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,7 +16,7 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->company(),
-            'code' => $this->fake->randomElement(['GOOG', 'YHOO', 'BLOOM']),
+            'code' => $this->faker->randomElement(['GOOG', 'YHOO', 'BLOOM']),
             'website' => $this->faker->url(),
         ];
     }

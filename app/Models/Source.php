@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sources extends Model
+class Source extends Model
 {
     use HasFactory;
 
-    public function article()
+    public function articles()
     {
-        return $this->belongsToMany(Article::class);
+        return $this->hasMany(Article::class);
     }
 }

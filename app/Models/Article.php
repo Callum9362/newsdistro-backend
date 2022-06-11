@@ -11,11 +11,6 @@ class Article extends Model
 
     public function source()
     {
-        return $this->hasMany(Source::class);
-    }
-
-    public function order()
-    {
-        return $this->belongsTo(Order::class);
+        return $this->belongsTo(Source::class);
     }
 }

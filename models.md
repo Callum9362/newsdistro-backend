@@ -26,7 +26,7 @@
 - Headline (varchar)
 - Body (varchar)
 - ReleaseDate (date)
-- ReleaseTime (time)
+- ArticleURL (time)
 - SourceID (FK)
 - OrderID (FK)
 

@@ -15,11 +15,15 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('source_id');
             $table->string('headline');
             $table->string('body');
             $table->timestamp('release_date_time');
             $table->string('url');
             $table->timestamps();
+            $table->foreign('source_id')->references('id')->on('sources')
+            ->onUpdate('cascade')
+            ->onDelete('cascade'); 
         });
     }
 
